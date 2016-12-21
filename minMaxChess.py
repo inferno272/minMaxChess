@@ -32,7 +32,7 @@ def game_ogre(board,white,black,w):
     #capture it, so we return True.
 
 
-    for key,l in all_moves.items:
+    for key,l in all_moves.items():
         for p in l:
             fro,moves = p
             for move in moves:
