@@ -120,8 +120,8 @@ def legal_moves(pieces,board,w):
         #The 8 possible moves a knight can make
         possible_adders = [(-2,1),(2,1),(-1,2),(1,2),(-2,-1),(2,-1),(-1,-2),(1,-2)]
         hp,vp = start
-        for p in possible_adders:
-            a,b = p
+        for adder in possible_adders:
+            a,b = adder
 
             #check if moving the knight keeps it on the 4x4 grid
             if 0 <= hp + a <= 3:
