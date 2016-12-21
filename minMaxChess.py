@@ -3,7 +3,7 @@ from copy import deepcopy as dp
 
 # Used in base-case of recursion to determine if white/black
 # can win in a single move i.e. capture the opposing queen
-def game_orge(board,white,black,w):
+def game_ogre(board,white,black,w):
 
     if w:
         all_moves = legal_moves(white,board,w)
@@ -41,8 +41,7 @@ def make_move(board,move,piece,opposing):
 
     else:
         board[a][b] = -1
-        a,b = to
-        board[a][b] = piece
+        board[c][d] = piece
 
 # Returns a list of all legal moves
 def legal_moves(pieces,board,w):
