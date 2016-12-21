@@ -76,7 +76,7 @@ def make_move(board,move,piece,opposing):
 
     if board[to_x][to_y] in op_piece:
         #delete from dictionary
-        del opposing[board[a][b]]
+        del opposing[board[to_x][to_y]]
         #set from position empty
         #set to position as the piece
         board[fro_x][fro_y] = -1
